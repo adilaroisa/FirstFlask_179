@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Message -->
+        <h1>Welcome to the Drake Game Club!</h1>
+        
+        <!-- Menambahkan gambar di bagian Home -->
+        <img src="https://images6.alphacoders.com/137/1379243.jpg" alt="Welcome Image" class="home-image">
+
+        <p>Enjoy your time here!</p>
+        <a href="/view_users">Go to View Users</a>
+
+        <!-- Form to Enter Name -->
+        <h2>Enter Your Name: </h2>
+        <form action="/submit" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <h3>Games Played: </h3>
+            <input type="text" name="games_played" placeholder="Enter games played" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Link to About Page -->
+        <a href="/about">About</a>
+    </div>
+</body>
+</html>

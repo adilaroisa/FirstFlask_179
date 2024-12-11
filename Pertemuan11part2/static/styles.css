@@ -1,0 +1,250 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a2c8f7; /* Pastel Blue */
+    color: #f8c8d1; /* Pastel Pink text color */
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Heading Style */
+h1 {
+    color: #f8c8d1; /* Pastel Pink */
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Button Style */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Light Blue */
+    color: #fff; /* White text for the button */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d78c0; /* Darker Blue */
+    transform: translateY(-2px);
+}
+
+/* Link Style */
+a {
+    text-decoration: none;
+    color: #f8c8d1; /* Pastel Pink */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f78c9f; /* A darker pastel pink */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #3498db; /* Light Blue */
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling untuk tampilan view_users.html */
+.view-users {
+    background-color: #73a3de; /* Biru Muda Pastel */
+    color: #f8c8d1; /* Pink Muda Pastel */
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+/* Tabel Styling */
+.view-users table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.view-users table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.view-users th {
+    background-color: #f8c8d1; /* Pink Muda */
+    color: #bf8686;
+    font-weight: bold;
+}
+
+.view-users td {
+    background-color: #5266a3; /* Biru Muda */
+    color: #f8c8d1; /* Pink Muda */
+}
+
+.view-users a {
+    color: #f8c8d1; /* Pink Muda */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.view-users a:hover {
+    color: #f78c9f; /* Darker Pink */
+}
+
+/* Styling for the image */
+.home-image {
+    width: 100%; /* Gambar akan mengambil lebar penuh dari kontainer */
+    height: auto; /* Mempertahankan aspek rasio gambar */
+    border-radius: 8px; /* Menambahkan sudut bulat */
+    margin-bottom: 20px; /* Menambahkan ruang di bawah gambar */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a2c8f7; /* Pastel Blue */
+    color: #f8c8d1; /* Pastel Pink text color */
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Greeting Section Styles */
+.greetings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+}
+
+/* Greeting Text */
+.greeting-text {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* GIF Container */
+.gif-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Greeting Image */
+.greeting-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Keyframes for Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menyesuaikan ukuran teks sapaan */
+.greeting-name {
+    font-size: 3em; /* Ukuran besar untuk teks sapaan */
+}
+
+/* Menyesuaikan ukuran teks "Have fun together!" */
+.have-fun-text {
+    font-size: 2em; /* Ukuran kecil untuk "Have fun together!" */
+}
+/* Mengatur agar gambar/video dan teks berada di tengah */
+.gif-container, .greeting-text {
+    text-align: center; /* Memastikan konten di tengah */
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Greeting</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Teks sapaan yang diposisikan di atas GIF -->
+        <div class="greeting-text">
+            <h2 class="greeting-name">Hello, {{ name }}!</h2>
+        </div>
+
+        <!-- Menyematkan GIF setelah teks sapaan -->
+        <div class="gif-container">
+            <img src="https://media1.tenor.com/m/UobmA8MKy9sAAAAd/neuvillette-neuvilette.gif" alt="Greeting GIF" class="greeting-image">
+        </div>
+
+        <!-- Teks "Have fun together!" yang diposisikan di bawah GIF -->
+        <div class="greeting-text">
+            <h1 class="have-fun-text">Have fun together!</h1>
+        </div>
+
+        <a href="/">Go Back Home</a>
+    </div>
+</body>
+</html>
